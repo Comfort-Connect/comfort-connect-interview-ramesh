@@ -10,6 +10,7 @@ Design a system that supports the following end-to-end flow:
 2. The system performs a soft credit pull against one or more credit bureaus to assess eligibility without impacting the applicant's credit score.
 3. Based on the credit profile, the system runs decisioning logic to determine eligibility across multiple lending partners — one of which is an internal "Premier Program" that has its own pricing engine (rate sheets, buydown tiers, promotional terms). The system should return ranked offers from all eligible partners.
 4. Once the homeowner selects an offer, the system must allocate a qualified contractor based on the homeowner's location, the contractor's service area, availability, and certification status, and create a dispatch/appointment for the installation.
+5. The system supports two additional user types — **Admin** and **Analytics** — who can review application data, offer decisions, contractor assignments, and overall pipeline activity through appropriate dashboards and access controls.
 
 ## Design Considerations
 
